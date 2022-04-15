@@ -5,7 +5,13 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
   <lib desc="#Gates" name="1"/>
   <lib desc="#Plexers" name="2"/>
   <lib desc="#Arithmetic" name="3"/>
-  <lib desc="#Memory" name="4"/>
+  <lib desc="#Memory" name="4">
+    <tool name="ROM">
+      <a name="contents">addr/data: 8 8
+0
+</a>
+    </tool>
+  </lib>
   <lib desc="#I/O" name="5"/>
   <lib desc="#Base" name="6">
     <tool name="Text Tool">
@@ -13,6 +19,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="font" val="SansSerif plain 12"/>
       <a name="halign" val="center"/>
       <a name="valign" val="base"/>
+    </tool>
+    <tool name="Text">
+      <a name="text" val="resultado"/>
     </tool>
   </lib>
   <main name="main"/>
@@ -53,9 +62,55 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <comp loc="(570,300)" name="sumador completo">
+    <wire from="(200,270)" to="(220,270)"/>
+    <wire from="(220,270)" to="(240,270)"/>
+    <wire from="(200,230)" to="(200,270)"/>
+    <comp loc="(600,730)" name="sumador completo">
+      <a name="facing" val="east"/>
+    </comp>
+    <comp loc="(550,660)" name="sumador completo">
+      <a name="facing" val="east"/>
+    </comp>
+    <comp loc="(350,390)" name="sumador completo">
+      <a name="facing" val="east"/>
+    </comp>
+    <comp lib="6" loc="(572,61)" name="Text"/>
+    <comp loc="(250,250)" name="sumador completo">
+      <a name="facing" val="east"/>
+    </comp>
+    <comp loc="(400,460)" name="sumador completo">
+      <a name="facing" val="east"/>
+    </comp>
+    <comp loc="(520,30)" name="sumador completo">
       <a name="facing" val="east"/>
       <a name="label" val="Sumador completo de dos bits"/>
+    </comp>
+    <comp loc="(150,120)" name="sumador completo">
+      <a name="facing" val="east"/>
+    </comp>
+    <comp loc="(450,530)" name="sumador completo">
+      <a name="facing" val="east"/>
+    </comp>
+    <comp loc="(210,190)" name="sumador completo">
+      <a name="facing" val="east"/>
+    </comp>
+    <comp loc="(200,180)" name="sumador completo">
+      <a name="facing" val="east"/>
+    </comp>
+    <comp loc="(500,600)" name="sumador completo">
+      <a name="facing" val="east"/>
+    </comp>
+    <comp lib="6" loc="(556,60)" name="Text">
+      <a name="text" val="carreo "/>
+    </comp>
+    <comp lib="6" loc="(465,93)" name="Text">
+      <a name="text" val="carreo "/>
+    </comp>
+    <comp lib="6" loc="(559,87)" name="Text">
+      <a name="text" val="resultado"/>
+    </comp>
+    <comp loc="(300,320)" name="sumador completo">
+      <a name="facing" val="east"/>
     </comp>
   </circuit>
   <circuit name="sumador completo">
@@ -64,12 +119,12 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
     <appear>
-      <rect fill="none" height="62" stroke="#000000" width="61" x="140" y="160"/>
+      <rect fill="none" height="62" stroke="#000000" width="29" x="140" y="160"/>
       <circ-port height="8" pin="50,90" width="8" x="136" y="166"/>
       <circ-port height="8" pin="150,90" width="8" x="136" y="186"/>
       <circ-port height="8" pin="240,90" width="8" x="136" y="206"/>
-      <circ-port height="10" pin="690,320" width="10" x="195" y="175"/>
-      <circ-port height="10" pin="700,600" width="10" x="195" y="195"/>
+      <circ-port height="10" pin="690,320" width="10" x="165" y="175"/>
+      <circ-port height="10" pin="700,600" width="10" x="165" y="195"/>
       <circ-anchor facing="east" height="6" width="6" x="167" y="147"/>
     </appear>
     <wire from="(250,450)" to="(250,710)"/>
